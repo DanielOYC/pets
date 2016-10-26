@@ -1,0 +1,141 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+
+/*使用自己的字体*/
+@font-face {
+    font-family: BebasNeue-webfont;
+    src: url("../fonts/BebasNeue-webfont.ttf");
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url("../images/pattern.gif");
+    font-family: BebasNeue-webfont;
+}
+
+#header{
+    background-color: red;
+    height: 2px;
+}
+
+#nav{
+    text-align: center;
+}
+
+#nav a{
+    display: inline-block;
+    color: white;
+    font-size: 26px;
+    width: 170px;
+    height: 43px;
+    line-height: 43px;
+}
+
+#nav a:hover{
+    background-color: white;
+    color: #0D1613;
+}
+
+#nav a.selected{
+    background-color: white;
+    color: #0D1613;
+}
+
+#content{
+    margin-top: 20px;
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#content ul li{
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#content ul li p{
+    color: #999;
+    font-size: 17px;
+    font-family: "sans-serif";
+    margin-top: 10px;
+}
+
+#content ul li a{
+    display: inline-block;
+    background-color: #C0392B;
+    color: white;
+    margin-top: 5px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 23px;
+    border-radius: 3px;
+}
+
+#content ul li a:hover{
+    background-color: #0D1613;
+    color: white;
+}
+
+#footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer div{
+    color: white;
+    font-size: 26px;
+}
+
+#footer img{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#footer img:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1222px){
+    #nav a{
+        font-size: 22px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 814px){
+    #nav a{
+        font-size: 18px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    #nav a{
+        font-size: 14px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 477px){
+    #content ul li{
+        margin-left: -30px;
+    }
+}
+
+
+
+
